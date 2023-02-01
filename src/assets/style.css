@@ -28,8 +28,15 @@ a:hover{
     border-bottom: .5px solid brown;
 }
 
+.logo:hover{
+    color: transparent;
+    border-bottom: .5px solid transparent;
+}
+
 button{
     border: none;    
+    cursor: pointer;
+    background: transparent;
 }
 
 .btn{

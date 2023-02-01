@@ -1,7 +1,7 @@
 <template>
     <section class="">
             <h2 class="color-red g-full text-center" >Запись на консультацию:</h2>
-            <form class="form-primary" action="#" @submit.prevent="addBid">
+            <form class="form-primary" @submit.prevent="addBid">
                 <label class="label-primary" for= "">ФИО:</label>
                 <input class="input-primary" v-model="forms.fio" type="text">               
                 <label class="label-primary" for= "">Электронная почта:</label>

@@ -115,8 +115,6 @@ import { ref, onMounted, computed } from 'vue';
         return region[0].name
     }
 
-
-
     let Bids = ref([]);
     
     let BidsFilter = computed(()=>{       

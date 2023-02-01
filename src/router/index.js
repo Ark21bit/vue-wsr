@@ -3,6 +3,7 @@ import Index from "../views/Index.vue"
 import Login from "../views/Login.vue"
 import Admin from "../views/Admin.vue"
 import Record from "../views/Record.vue"
+import Consultant from "../views/Consultant.vue"
 
 const routes = [
   {
@@ -32,8 +33,17 @@ const routes = [
     component: Record,  
     meta: { 
       Auth: true
-    }, 
-  },
+    },     
+  },  
+  {
+    path: '/consultant',
+    name: 'consultant',
+    component: Consultant,  
+    meta: { 
+      Auth: true
+    },     
+  },  
+  
   
 ]
 

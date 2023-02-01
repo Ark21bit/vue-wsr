@@ -3,12 +3,12 @@
             <h1 class="color-red">О нас:</h1>
             <p class="font">Инофрмация о скрвисе Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magnam ipsum tempore omnis perferendis consectetur veniam similique nesciunt optio, suscipit non facilis ea! Laborum ex voluptatibus ut alias quasi omnis!</p>
             <p class="font">Описание предоставлеемых услуг Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto officia iste commodi facilis omnis ab sunt voluptates iure ex temporibus!</p>
-            <button class="btn btn-primary">Запись на консультацию</button>
+            <router-link to="/record" class="btn btn-primary">Запись на консультацию</router-link>
         </section>
         <section class="konsultants">
             <h2 class="color-red g-full">Консультанты:</h2>
             <div class="item" v-for="consultant in consultants">
-                <img src="../assets/img/IMAGE-1.png" alt="">
+                <img src="../assets/img/cons.webp" alt="">
                 <h3 class="color-red">{{consultant.firstname}}</h3>
                 <p class="font">Описание Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur debitis blanditiis repudiandae ea fugit ratione ducimus. Laborum consequatur ea voluptatem.</p>
             </div>            
@@ -62,7 +62,3 @@ import { ref } from 'vue';
     })
 
 </script>
-
-<style >
-
-</style>

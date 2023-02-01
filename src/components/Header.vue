@@ -1,17 +1,17 @@
 <template>
     <header>
         <div class="wrapper">
-            <img src="../assets/img/Pompeo.svg" alt="">
-            <button class="btn-menu">
+            <router-link to="/" class="logo"><img src="../assets/img/Pompeo.svg" alt=""></router-link>
+            <button class="btn-menu" @click="isNav = !isNav" :class="{'active': isNav}">
                 <span class="rec"></span>
                 <span class="rec"></span>
                 <span class="rec"></span>
             </button>
-            <nav class="menu">
-                <b  class="font">Профессиональный труд на благое дело. Окажем любую консультационную помощь</b>
-                <a class="font" href="#" v-if="isAuth" @click.prevent="logout">Выход</a>
-                <a class="font" href="#" v-else="isAuth">Авторизация</a>
-                <a class="font" href="#">Запись на консультацию</a>
+            <nav class="menu" >
+                <b class="font">Профессиональный труд на благое дело. Окажем любую консультационную помощь</b>
+                <button class="font" href="#" v-if="isAuth" @click.prevent="logout">Выход</button>
+                <button class="font" href="#" v-else="isAuth">Авторизация</button>
+                <router-link class="font" to="/record">Запись на консультацию</router-link>
             </nav>
         </div>
     </header>
@@ -36,6 +36,8 @@ import { computed, ref, onMounted } from 'vue';
         localStorage.clear()
         router.push("/login")
     } 
+
+    let isNav = ref(false)
 
     
 </script>
